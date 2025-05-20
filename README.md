@@ -39,15 +39,25 @@
 
 ## 🗂️ Project Structure
 ironfront/
-│
-├── assets/ # Images, sounds, icons
-├── database/ # SQLite setup and queries
-├── dashboard/ # Analytics visualizations
-├── game/ # Main game code
-│ ├── main.py # Game loop
-│ └── tank.py # Tank class
+├── assets/
+│   ├── tanks/
+│   │   ├── player_tank.png
+│   │   └── enemy_tank.png
+│   ├── bullets/
+│   │   └── bullet.png
+│   ├── explosions/
+│   │   └── explosion.png
+│   ├── terrain/
+│   │   ├── grass_tile.png
+│   │   └── road_tile.png
+│   └── ui/
+│       ├── health_bar.png
+│       └── score_panel.png
+├── game/
+│   └── main.py
 ├── README.md
 └── requirements.txt
+
 
 ---
 
