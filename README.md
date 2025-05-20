@@ -16,7 +16,25 @@
 - 📈 Optional analytics dashboard using Matplotlib or Flask
 
 ---
+## 🎨 Assets Credits
 
+- **Top-Down Tanks** by Kenney.nl
+  - [Download from OpenGameArt.org](https://opengameart.org/content/top-down-tanks-redux)
+  - License: CC0 (No attribution required)
+
+- **Free 2D Battle Tank Game Assets** by CraftPix.net
+  - [Download from CraftPix.net](https://craftpix.net/freebies/free-2d-battle-tank-game-assets/)
+  - License: Free for personal and commercial use (check site for details)
+
+- **Topdown Tanks** by Kenney.nl
+  - [Download from OpenGameArt.org](https://opengameart.org/content/topdown-tanks)
+  - License: CC0 (No attribution required)
+
+- **Free Tank** by Game Developer Studio
+  - [Download from Game Developer Studio](https://www.gamedeveloperstudio.com/graphics/viewgraphic.php?item=1l4m333l6u0b385o8f&page-name=Free-tank)
+  - License: Check site for details
+
+---
 ## 🧪 Screenshots
 
 ### 🪖 Gameplay
