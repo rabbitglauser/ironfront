@@ -2,6 +2,7 @@ import pygame
 import sys
 from map import game_map
 from tank import Tank
+from bullet import Bullet
 
 pygame.init()
 TILE_SIZE = 64
@@ -37,7 +38,7 @@ running = True
 
 while running:
     screen.fill((0, 0, 0))
-
+    # Draw map ...
     for y, row in enumerate(game_map):
         for x, tile in enumerate(row):
             texture = tile_textures.get(tile)
@@ -45,16 +46,23 @@ while running:
                 screen.blit(texture, (x * TILE_SIZE, y * TILE_SIZE))
 
     player.handle_keys()
-
     mouse_pos = pygame.mouse.get_pos()
     player.update_turret_angle(mouse_pos)
 
+    player.update_bullets(screen.get_rect())
     player.draw(screen)
 
     pygame.display.flip()
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            if player.shoot_cooldown == 0:
+                player.shoot()
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+            if player.shoot_cooldown == 0:
+                player.shoot()
 
     clock.tick(60)
 pygame.quit()
